@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>coffeerun</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
   <style>
     form :focus:required:invalid {
       border-color: #a94442;
@@ -46,7 +49,7 @@
 
           <div>
             <label for="strengthLevel">Caffeine Rating</label>
-            <input name="strength" id="strengthLevel" type="range" value="30">
+            <input name="strength" id="strengthLevel" type="range" value="30" min="1" max="100">
           </div>
 
           <button type="submit" class="btn btn-primary">Submit</button>
@@ -76,6 +79,9 @@
   <script src="scripts/validation.js" charset="utf-8" ></script>
   <script src="scripts/checklist.js" charset="utf-8" ></script>
   <script src="scripts/formhandler.js" charset="utf-8" ></script>
+  <script src="scripts/firebaseconfig.js" charset="utf-8" ></script>
+  <script src="scripts/remotedatastore.js" charset="utf-8" ></script>
+  <script src="scripts/firebasedatastore.js" charset="utf-8" ></script>
   <script src="scripts/datastore.js" charset="utf-8" ></script>
   <script src="scripts/truck.js" charset="utf-8" ></script>
   <script src="scripts/main.js" charset="utf-8" ></script>
